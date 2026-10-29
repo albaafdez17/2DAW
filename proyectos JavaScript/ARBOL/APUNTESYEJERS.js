@@ -54,6 +54,37 @@ window.onload = function(){
             nuevos[0].remove(); 
         }
     }
-    
+}
+
+//EJERCICIO 22
+
+window.onload = function(){
+    let contador = 0;
+    let boton = document.querySelectorAll("button");
+    let contenedor = document.getElementsByClassName("caja");
+
+    boton[3].onclick = function(){
+        contador++; 
+        
+        //crear etiqueta
+        let etiqueta = document.createElement("p");
+        //crear el nodo de texto
+        let texto = document.createTextNode("Párrafo número " + contador); 
+        //meter el texto al p q he creado
+        etiqueta.appendChild(texto);
+        //enganchamos el p al div
+        contenedor[0].appendChild(etiqueta); 
+
+    }
+}
+
+//EJERCICIO 23
+window.onload = function(){
+    let boton = document.querySelectorAll("button");
+    let contenedor = document.getElementsByClassName("ejercicio23");
+
+    boton[4].onclick = function(){
+
+    }
 
 }
