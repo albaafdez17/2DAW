@@ -1,0 +1,24 @@
+*{
+    color: blue;
+}
+
+h1{
+    width: 50px;
+}
+
+.Uno{
+    background-color: grey;
+}
+
+.Dos{
+    background-color: yellow;
+}
+
+#parrafo1{
+    border: black;
+}
+
+#parrafo2{
+    border: red;
+    font-style: green;
+}

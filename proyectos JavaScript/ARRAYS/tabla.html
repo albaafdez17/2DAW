@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tabla.js"></script> 
+</head>
+<body>
+    <!--A. Pide nueva ancgura, pide nueva altura, actualiza esos valores
+    B. pide un valor y se lo suma al grosor del borde
+    C. Rotación entre: centro izquierda derecha-->
+    <table width="300px" height="200px" border="1px" align="center">
+        <tbody>
+        <tr>
+            <td><input type="button" class="boton" value="A" onclick="botonA()"></td>
+            <td><input type="button" class="boton" value="B" onclick="botonB()"></td>
+            <td><input type="button" class="boton" value="C" onclick="botonC()"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div numero="0">
+        <input type="button" class="boton" value="sumar" onclick="sumar()">
+        <input type="button" class="boton" value="restar" onclick="botonA()">
+    </div>
+    
+</body>
+</html>

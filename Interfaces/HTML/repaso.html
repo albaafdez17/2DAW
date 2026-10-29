@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Repaso de HTML">
+    <meta name="keywords" content="etiqueta,atributo, HTML, listas, enlaces">
+    <title>Repaso HTML</title>
+</head>
+<body>
+    <!--Imágenes-->
+    <h2>Imágenes</h2>
+    <img src="istockphoto-1495253804-612x612.jpg" alt="Pájaro"> 
+    <hr> <!--separar-->
+    <br><!--salto de línea-->
+
+    <h1>Lista Ordenada</h1>
+    <ol start="5">
+        <li>Julio</li>
+        <li>Carmen</li>
+        <li>Ignacio</li>
+        <li>Elena</li>
+    </ol>
+    <br>
+
+    <h1>Lista no Ordenada</h1>
+    <ul>
+        <li>FC.Barcelona</li>
+        <li>Real Madrid</li>
+        <li>Atlético de Madrid</li>
+    </ul>
+    <br>
+
+    <h1>Listas de definición</h1>
+    <dl>
+        <dt>Término1</dt>
+        <dd>Definición1</dd>
+        <dt>Término2</dt>
+        <dd>Definición2</dd>
+        <dt>Término3</dt>
+        <dd>Definición3</dd>
+    </dl>
+    <br>
+
+    <h1>Listas anidadas</h1>
+    <ul>
+        <li>Carnívoro
+            <ul>
+                <li>León</li>
+                <li>Buítres</li>
+                <li>Hiena</li>
+            </ul>
+        </li>
+        <li>Herbívoro
+            <ul>
+                <li>Cabra</li>
+                <li>Vaca</li>
+            </ul>
+        </li>
+        <li>Omnívoro
+            <ul>
+                <li>Oso</li>
+                <li>Urraca</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Enlaces </h2>
+    <a href=""><!--Para enlazar algunas páginas con otras self se abre en la misma página, blank en una distinta--></a>
+        <p>
+            <a href="https://google.com" target="_blank">Google</a>
+        </p>
+    <br>
+
+    <h1>Tablas</h1>
+    
+    <table border="4">
+        <caption>Factura artículos deportivos</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zapatillas</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Camiseta</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total</th>
+            <th>50</th>
+        </tfoot>
+        
+    </table>
+    <br>
+
+    <table border="4">
+        <tr>
+            <th colspan="3">Precio de las naranjas</th>
+        </tr>
+        <tr>
+            <th rowspan="4">Datos Analizados</th>
+            <th>Provincia</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Málaga</td>
+            <td>0,54</td>
+        </tr>
+        <tr>
+            <td>Granada</td>
+            <td>0,45</td>
+        </tr>
+        <tr>
+            <th>Promedio</th>
+            <th>0,5</th>
+        </tr>
+    </table>
+
+    <h1>Formularios: </h1>
+
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" name="nombre" size="25" required>
+
+    <br>
+
+    <label for="contraseña">Contraseña: </label>
+    <input type="password" id="password" name="nombre" size="25" required>
+
+    <br>
+
+    <label for="comentario">Comentario: </label><br>
+    <textarea> </textarea>
+
+
+    <br><br><br><br>
+
+    <form method="post">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+  
+        <br><br>
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url">
+
+        <br><br>
+
+        <label for="email">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <br><br>
+
+        <label for="hora">Hora: </label>
+        <input type="time" id="hora" name="hora">
+
+        <br><br>
+
+        <label for="fecha_y_hora">Fecha y Hora:</label>
+        <input type="datetime-local" id="fecha_y_hora" name="fecha_y_hora">
+  
+        <br><br>
+
+        <label for="numero">Numero: </label>
+        <input type="number" id="email" name="email">
+
+        <br><br>
+
+        <label for="email">Rango:</label>
+        <input type="range" id="email" name="email">
+
+        <br><br> 
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        <button type="button">Hola mundo</button>
+
+        <br><br>
+
+        <input type="checkbox" name="aceptar" value="yes" checked> Opción 1 <br>
+        <input type="checkbox" name="aceptar" value="yes"> Opción 2 <br>
+        <input type="checkbox" name="aceptar" value="yes" checked> Opción 3 <br>
+
+        <br><br>
+
+        <input type="radio" name="opciones" value="1" checked> Opción 1 <br>
+        <input type="radio" name="opciones" value="2"> Opción 2 <br>
+        <input type="radio" name="opciones" value="3" > Opción 3 <br>
+
+        <br><br>
+
+        <select id="entradas" name="entradas"> 
+
+            <option value="1">opción 1</option> 
+            <option value="2" selected>opción 2</option> 
+            <option value="3">opción 3</option> 
+
+        </select> 
+
+        <br><br>
+
+        <fieldset> 
+        <legend>Datos del cliente</legend> 
+
+            <label for="nombre">Nombre:</label> 
+            <input type="text" id="nombre" name="nombre"> 
+
+            <br><br> 
+
+            <label for="edad">Edad:</label> 
+            <input type="number" id="edad" name="edad"> 
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>

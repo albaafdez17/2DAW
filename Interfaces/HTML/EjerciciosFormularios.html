@@ -1,0 +1,937 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Formularios</title> 
+
+</head> 
+
+<body> 
+
+ 
+
+    <h1>Ejercicio 1</h1> 
+
+    <h1>Reserva de entradas</h1> 
+
+    <form method="post"> 
+
+ 
+
+        <label for="usuario">Nombre de usuario: </label> 
+
+        <input type="text" id="usuario" name="usuario" required> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="password">Contraseña:</label> 
+
+        <input type="password" id="password" name="password" 
+
+               minlength="8" required> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="password2">Repetición de la contraseña:</label> 
+
+        <input type="password" id="password2" name="password2" 
+
+               minlength="8" required> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="correo">Correo electrónico:</label> 
+
+        <input type="email" id="correo" name="correo" required> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="fecha">Fecha de nacimiento:</label> 
+
+        <input type="date" id="fecha" name="fecha"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="telefono">Número de teléfono:</label> 
+
+        <input type="tel" id="telefono" name="teléfono"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="web">Página web personal:</label> 
+
+        <input type="url" id="web" name="web"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <input type="checkbox" id="condiciones" 
+
+               name="condiciones" required> 
+
+ 
+
+        <label for="condiciones"> 
+
+            Acepto las condiciones de uso 
+
+        </label> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <button type="submit">Crear cuenta</button> 
+
+         
+
+ 
+
+    </form> 
+
+ 
+
+    <br><br> 
+
+ 
+
+    <h1>Ejercicio 2</h1> 
+
+ 
+
+    <form method="post"> 
+
+ 
+
+        <label for="nombre">Nombre y apellidos: </label> 
+
+        <input type="text" id="nombre" name="nombre"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="correo">Correo: </label> 
+
+        <input type="email" id="correo" name="correo"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="fecha">Fecha de concierto: </label> 
+
+        <input type="date" id="fecha" name="fecha"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="entradas">Número de entradas: </label> 
+
+        <select id="entradas" name="entradas"> 
+
+ 
+
+            <option value="1" selected>1</option> 
+
+            <option value="2">2</option> 
+
+            <option value="3">3</option> 
+
+            <option value="4">4</option> 
+
+            <option value="5">5</option> 
+
+            <option value="6">6</option> 
+
+ 
+
+        </select> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <p>Tipo de entrada:</p> 
+
+ 
+
+        <input type="radio" id="general" name="tipo" value="general"> 
+
+        <label for="general">General</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="radio" id="premium" name="tipo" value="premium"> 
+
+        <label for="premium">Premium</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="radio" id="vip" name="tipo" value="vip"> 
+
+        <label for="vip">VIP</label> 
+
+ 
+
+        <br><br> 
+
+         
+
+        <input type="checkbox" id="envio" name="envio"> 
+
+        <label for="condiciones"> 
+
+            Deseo recibir las entradas por correo electrónico 
+
+        </label> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <button type="submit">Realizar reserva</button> 
+
+ 
+
+ 
+
+    </form> 
+
+ 
+
+ 
+
+    <h1>Encuesta sobre Desarrollo Web</h1> 
+
+ 
+
+    <form method="post"> 
+
+ 
+
+        <label for="nivel">Nivel de HTML: </label> 
+
+        <select id="nivel" name="nivel"> 
+
+ 
+
+            <option value="1" selected>Principiante</option> 
+
+            <option value="2">Medio</option> 
+
+            <option value="3">Avanzado</option> 
+
+ 
+
+        </select> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <p>Tecnologías que conoces: </p> 
+
+ 
+
+        <input type="checkbox" id="html" name="tecnologias" value="html"> 
+
+        <label for="html">HTML</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="css" name="tecnologias" value="css"> 
+
+        <label for="css">CSS</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="javascript" name="tecnologias" value="javascript"> 
+
+        <label for="javascript">JavaScript</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="php" name="tecnologias" value="php"> 
+
+        <label for="php">PHP</label> 
+
+ 
+
+    <br> 
+
+ 
+
+    <input type="checkbox" id="java" name="tecnologias" value="java"> 
+
+    <label for="java">Java</label> 
+
+ 
+
+    <br> 
+
+ 
+
+    <input type="checkbox" id="sql" name="tecnologias" value="sql"> 
+
+    <label for="sql">SQL</label> 
+
+ 
+
+    <br><br> 
+
+ 
+
+    <p>Entorno de desarrollo preferido:</p> 
+
+ 
+
+    <input type="radio" id="vscode" name="entorno" value="vscode"> 
+
+    <label for="vscode">VS Code</label> 
+
+ 
+
+    <br> 
+
+ 
+
+    <input type="radio" id="netbeans" name="entorno" value="netbeans"> 
+
+    <label for="netbeans">NetBeans</label> 
+
+ 
+
+    <br> 
+
+ 
+
+    <input type="radio" id="intellij" name="entorno" value="intellij"> 
+
+    <label for="intellij">IntelliJ</label> 
+
+ 
+
+    <br> 
+
+ 
+
+    <input type="radio" id="eclipse" name="entorno" value="eclipse"> 
+
+    <label for="eclipse">Eclipse</label> 
+
+ 
+
+    <br> 
+
+ 
+
+    <input type="radio" id="otro" name="entorno" value="otro"> 
+
+    <label for="otro">Otro</label> 
+
+ 
+
+    <br><br> 
+
+ 
+
+    <label for="aprender"> 
+
+        ¿Qué tecnología te gustaría aprender próximamente? 
+
+    </label> 
+
+ 
+
+    <br><br> 
+
+ 
+
+    <textarea id="aprender" name="aprender" rows="4" cols="40"></textarea> 
+
+ 
+
+    <br><br> 
+
+ 
+
+    <button type="submit">Enviar encuesta</button> 
+
+ 
+
+    </form> 
+
+ 
+
+    <br><br> 
+
+ 
+
+    <h2>Compra de portátil</h2> 
+
+ 
+
+    <form method="post"> 
+
+ 
+
+    <!-- Datos del cliente --> 
+
+    <fieldset> 
+
+        <legend>Datos del cliente</legend> 
+
+ 
+
+        <label for="nombre">Nombre:</label> 
+
+        <input type="text" id="nombre" name="nombre"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="correo">Correo electrónico:</label> 
+
+        <input type="email" id="correo" name="correo"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="telefono">Teléfono:</label> 
+
+        <input type="tel" id="telefono" name="telefono"> 
+
+ 
+
+    </fieldset> 
+
+ 
+
+    <br> 
+
+ 
+
+    <!-- Configuración --> 
+
+    <fieldset> 
+
+        <legend>Configuración</legend> 
+
+ 
+
+        <p>Procesador:</p> 
+
+ 
+
+        <input type="radio" id="i5" name="procesador" value="i5"> 
+
+        <label for="i5">Intel Core i5</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="radio" id="i7" name="procesador" value="i7"> 
+
+        <label for="i7">Intel Core i7</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="radio" id="ryzen7" name="procesador" value="ryzen7"> 
+
+        <label for="ryzen7">AMD Ryzen 7</label> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="ram">Memoria RAM:</label> 
+
+        <select id="ram" name="ram"> 
+
+            <option value="8">8 GB</option> 
+
+            <option value="16">16 GB</option> 
+
+            <option value="32">32 GB</option> 
+
+        </select> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <p>Extras:</p> 
+
+ 
+
+        <input type="checkbox" id="raton" name="extras" value="raton"> 
+
+        <label for="raton">Ratón</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="mochila" name="extras" value="mochila"> 
+
+        <label for="mochila">Mochila</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="disco" name="extras" value="disco"> 
+
+        <label for="disco">Disco adicional</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="garantia" name="extras" value="garantia"> 
+
+        <label for="garantia">Garantía ampliada</label> 
+
+ 
+
+    </fieldset> 
+
+ 
+
+    <br> 
+
+ 
+
+    <!-- Entrega --> 
+
+    <fieldset> 
+
+        <legend>Entrega</legend> 
+
+ 
+
+        <label for="fecha">Fecha de entrega:</label> 
+
+        <input type="date" id="fecha" name="fecha"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="horario">Horario:</label> 
+
+        <select id="horario" name="horario"> 
+
+            <option value="manana">Mañana</option> 
+
+            <option value="tarde">Tarde</option> 
+
+        </select> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="direccion">Dirección de entrega:</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <textarea id="direccion" 
+
+                  name="direccion" 
+
+                  rows="4" 
+
+                  cols="40"></textarea> 
+
+ 
+
+    </fieldset> 
+
+ 
+
+    <br> 
+
+ 
+
+    <button type="submit">Realizar pedido</button> 
+
+ 
+
+    <button type="reset">Restablecer</button> 
+
+ 
+
+    </form> 
+
+ 
+
+    <br><br> 
+
+ 
+
+    <h2>Solicitud de beca</h2> 
+
+ 
+
+    <form action="#" method="post"> 
+
+ 
+
+    <!-- Datos del solicitante --> 
+
+    <fieldset> 
+
+        <legend>Datos del solicitante</legend> 
+
+ 
+
+        <label for="nombre">Nombre:</label> 
+
+        <input type="text" id="nombre" name="nombre"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="apellidos">Apellidos:</label> 
+
+        <input type="text" id="apellidos" name="apellidos"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="dni">DNI:</label> 
+
+        <input type="text" id="dni" name="dni"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="nacimiento">Fecha de nacimiento:</label> 
+
+        <input type="date" id="nacimiento" name="nacimiento"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="correo">Correo electrónico:</label> 
+
+        <input type="email" id="correo" name="correo"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="telefono">Teléfono:</label> 
+
+        <input type="tel" id="telefono" name="telefono"> 
+
+ 
+
+    </fieldset> 
+
+ 
+
+    <br> 
+
+ 
+
+    <!-- Datos académicos --> 
+
+    <fieldset> 
+
+        <legend>Datos académicos</legend> 
+
+ 
+
+        <label for="ciclo">Ciclo formativo:</label> 
+
+        <select id="ciclo" name="ciclo"> 
+
+            <option value="daw">DAW</option> 
+
+            <option value="dam">DAM</option> 
+
+            <option value="asir">ASIR</option> 
+
+        </select> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <p>Curso:</p> 
+
+ 
+
+        <input type="radio" id="curso1" name="curso" value="1"> 
+
+        <label for="curso1">1º</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="radio" id="curso2" name="curso" value="2"> 
+
+        <label for="curso2">2º</label> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="media">Nota media:</label> 
+
+        <input type="number" 
+
+               id="media" 
+
+               name="media" 
+
+               min="0" 
+
+               max="10" 
+
+               step="0.1"> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="centro">Centro:</label> 
+
+        <input type="text" id="centro" name="centro"> 
+
+ 
+
+    </fieldset> 
+
+ 
+
+    <br> 
+
+ 
+
+    <!-- Situación personal --> 
+
+    <fieldset> 
+
+        <legend>Situación personal</legend> 
+
+ 
+
+        <input type="checkbox" id="familia" name="situacion" value="familia"> 
+
+        <label for="familia">Familia numerosa</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="discapacidad" name="situacion" value="discapacidad"> 
+
+        <label for="discapacidad">Discapacidad</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="desplazamiento" name="situacion" value="desplazamiento"> 
+
+        <label for="desplazamiento">Desplazamiento</label> 
+
+ 
+
+        <br> 
+
+ 
+
+        <input type="checkbox" id="alojamiento" name="situacion" value="alojamiento"> 
+
+        <label for="alojamiento">Necesidad de alojamiento</label> 
+
+ 
+
+    </fieldset> 
+
+ 
+
+    <br> 
+
+ 
+
+    <!-- Documentación / estado de la solicitud --> 
+
+    <fieldset> 
+
+        <legend>Estado de la solicitud</legend> 
+
+ 
+
+        <label for="progreso">Progreso de la solicitud:</label> 
+
+        <progress id="progreso" value="75" max="100">75%</progress> 
+
+ 
+
+        <br><br> 
+
+ 
+
+        <label for="nota">Nota media:</label> 
+
+        <meter id="nota" value="8.2" min="0" max="10">8.2/10</meter> 
+
+ 
+
+    </fieldset> 
+
+ 
+
+    <br> 
+
+ 
+
+    <button type="submit">Enviar solicitud</button> 
+
+ 
+
+    <button type="reset">Borrar datos</button> 
+
+ 
+
+    </form> 
+
+ 
+
+</body> 
+
+</html> 
+
+ 

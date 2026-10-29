@@ -1,0 +1,99 @@
+/*CSS EJERCICIO 1 */
+
+body{
+    font-size: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1d3557;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    margin: 0 auto;
+}
+
+header p{
+    font-size: 18px;
+}
+
+nav{
+    background-color: #457b9d;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 10px; 
+}
+
+a:hover{
+    background-color: white;
+    color: #1d3557;
+}
+
+#actividades{
+    width: 90%;
+    max-width: 900px;
+}
+
+.actividad{
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+h2{
+    color: #1d3557;
+}
+
+.actividad:hover{
+    background-color: #f8fafc;
+}
+
+.actividad:first-child{
+    border-left: 6px solid #e76f51;
+}
+
+.actividad img + p{
+    font-style: italic;
+    color:#64748b;
+}
+
+#actividades img{
+    width: 220px;
+    /* superar el ancho de su contenedor...*/
+}
+
+ul li{
+    list-style-type: square;
+}
+
+ul + a{
+    font-weight: bold;
+    color: #457b9d;
+    text-decoration: none;
+}
+
+ul + a:hover{
+    text-decoration: underline;
+}
+
+a[target="_blank"]{
+    color: #e76f51; 
+}
+
+footer{
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 15px; 
+}
