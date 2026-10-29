@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="24.js"></script>
+    <style>
+        .boton {
+            background-color: #7551b9;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: #218838;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f0;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .contenedor {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #218838;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            color: #666;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .lista-tareas {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lista-tareas li {
+            padding: 16px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        /* Tareas impares: fondo verde y texto blanco */
+        .lista-tareas li:nth-child(odd) {
+            background-color: #28a745;
+            color: white;
+        }
+
+        /* Tareas pares: fondo blanco y texto verde */
+        .lista-tareas li:nth-child(even) {
+            background-color: #ffffff;
+            color: #218838;
+            border: 1px solid #28a745;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Ejercicio 24</h2>
+    <h3>Tareas Pendientes</h3>
+    <ul class="lista-tareas">
+            <li>Estudiar PHP para el próximo examen</li>
+            <li>Terminar la actividad de IPE</li>
+            <li>Realizar ejercicios de JavaScript</li>
+            <li>Practicar consultas SQL en MySQL</li>
+            <li>Repasar formularios y sesiones en PHP</li>
+            <li>Entregar la práctica de Diseño de Interfaces</li>
+            <li>Avanzar en el proyecto de Desarrollo Web</li>
+            
+        </ul>
+        <br>
+        <button class="boton">Añadir tarea al Inicio</button>
+        <button class="boton">Añadir tarea al Final</button>
+        <button class="boton">Eliminar ultimo elemento</button>
+        <button class="boton">Eliminar el primer elemento</button>
+
+       
+    
+</body>
+</html>
