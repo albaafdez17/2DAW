@@ -122,7 +122,7 @@ window.onload = function(){
 //EJERCICIO 20 esta mal completar...
 
 
-//EJERCICIO 22 JUYUUUUUUUUUUU
+//EJERCICIO 22 
 window.onload = function(){
     let contador = 0;
     let boton = document.querySelectorAll("button");

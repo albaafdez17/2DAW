@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            hAZ CLICK AQUÍ
+        </p>
+    </div>
+    
+</body>
+</html>
+
+<script>
+//manejadores de eventos
+let abuelo = document.querySelector("section");
+let padre = document.querySelector("div");
+let hijo = document.querySelector("p");
+
+abuelo.addEventListener("click", function(){
+    alert("Soy el yayo")
+})
+padre.addEventListener("click", function(){
+    alert("Soy el papa")
+})
+hijo.addEventListener("click", function(){
+    alert("Soy el jonan")
+})
+
+</script>
