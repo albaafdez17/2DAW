@@ -11,24 +11,100 @@
             hAZ CLICK AQUÍ
         </p>
     </div>
+
+    <a href="">yo nunca visito esta pagina</a>
+
+    <ul id="productos">
+        <li>hola</li>
+        <li>buenas</li>
+        <li>adios</li>
+    </ul>
     
 </body>
 </html>
 
 <script>
-//manejadores de eventos
+//manejadores de eventos. DIME EL ORDEN DE EJECUCIÓN => pregunta teorica examen
 let abuelo = document.querySelector("section");
 let padre = document.querySelector("div");
 let hijo = document.querySelector("p");
 
-abuelo.addEventListener("click", function(){
-    alert("Soy el yayo")
-})
-padre.addEventListener("click", function(){
-    alert("Soy el papa")
+abuelo.addEventListener("click", function(e){
+    alert("Soy el yayo");
+}, true)
+padre.addEventListener("click", function(e){
+    alert("Soy el papa");
 })
 hijo.addEventListener("click", function(){
-    alert("Soy el jonan")
+    alert("Soy el hijo"); 
+    e.stopPropagation();
+    //e.stopeInmediatyPropagation(); 
+}, true)
+
+
+padre.addEventListener("click", function(e){
+    alert("Soy el papa");
 })
+hijo.addEventListener("click", function(){
+    alert("Soy el hijo"); 
+    e.stopPropagation();
+}, true)
+
+
+//cortar la propagación de eventos. Con el e.stopPropagation();
+
+
+//Objetos event
+hijo.addEventListener("click", function(evento){ //en el parentesis pongo el nombre que me de la gana
+    console.log(evento.target); 
+    console.log(event.target.textContent); 
+})
+
+
+
+let nacho = document.getElementById("productos");
+nacho.addEventListener("click", function(e){
+    if(e.target != e.currentTarget){
+        e.target.style.backgroundColor = "red";
+    }
+})
+
+/* 
+    const contenedor = document.getElementById("menu");
+    contenedor.addEventListener("click", function(e){
+        console.log(e.target);
+        console.log(e.currentTarget);
+
+        console.log(event.target.textContent)
+    
+    });
+
+    document.querySelector("input").addEventListener("keydown", function(e){
+        console.log(e.key);
+
+        //para reclado -> e.ctrlkey
+        e.shift 
+        e.altKey
+        e.metaKey
+
+        if(e.key === "a"){
+
+        }
+    })
+
+    document.body.addEventListener("mousemove", function(e){
+        let res = e.clientX + "," + e.clientY+ "\n" + e.pageX + "e.pageY"; 
+        document.querySelector("input").value = res;  
+    })
+
+    enlace
+    document.querySelector("a").addEventListener("click", function(e){
+        e.preventDefault(); //siempre lo primero de la funcion
+        alert("no me da la gana de visitar la pagina"); 
+    })
+
+
+    
+*/
 
 </script>
